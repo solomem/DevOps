@@ -19,8 +19,4 @@ steps:
   displayName: 'Run a multi-line script'
 - task: Bash@3
   inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      
-      echo file_{1..30..4}_{a..z..4}.txt
+    filePath: './system_information.bash'
